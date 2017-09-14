@@ -64,10 +64,10 @@ int main()
 			change = amountPaid - itemCost;
 			cout << "Your change is $ " << change << endl;
 			    changeRemaining = (change - changeinDollars) * 100;
-				changeinDollars = changeRemaining / 1.00;
+				changeinDollars = changeRemaining / 100;
 				changeinQuarters = changeRemaining / 25;
-			    changeinDimes = (changeRemaining %= 25) / 10;
-			    changeinNickels = (changeRemaining %= 10) / 5;
+			    changeinDimes = changeRemaining / 10;
+			    changeinNickels = changeRemaining / 5;
 
 			cout << "This is how your change was disperse: " << endl;
 			cout << "Dollar(s): " << changeinDollars << endl;
